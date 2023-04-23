@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+
+    <link rel="stylesheet" href="style_formulaire.css">
+</head>
+<body>
+    <!-- div qui englobe tout -->
+    <div class="all">
+        <form method="post" action="formulaire.php" id="formulaire">
+            <div class="gauche">
+                <!-- div qui englobe les information personnel -->
+                <div class="identiter">
+                    <!-- nom -->
+                    <div id="groupeNom">
+                        <label for="nom"> Nom <sup>*</sup> </label>
+                        <input type="text" id = nom required>
+                    </div>
+                    <div id="groupePrenom">    
+                    <!--  prenom -->
+                        <label for="prenom">Prénom <sup>*</sup></label>   
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+                    <div id="groupeMail">
+                        <!-- mail -->
+                        <label for="email">Adresse mail  <sup>*</sup> </label>
+                        <input type="email" id="email" required>
+                    </div>
+                </div>
+                <div class="groupeDe3">
+                    <div class="option">
+                            <!-- les differentes options -->
+                            <h4 id="titreEch">Echéance:</h4>
+                            <div id="radio3">
+                                <input type="radio"name="choix1" id="chois-1">
+                                sous 3 mois
+                                <br>
+                                <input type="radio"name="choix2" id="chois-2">
+                                3 à 6 mois
+                                <br>
+                                <input type="radio"name="choix3" id="chois-3">
+                                plus de 6 mois
+                            </div>
+                    </div>
+
+                    <div id="groupeDe2">
+                        <div class="nature_demande">
+                            <h4 id="titreNature">Nature de la demande: </h4>
+                            <!-- investissement -->
+                            <div id="rep1">
+                                <input type="checkbox" name="reponse1" id="reponseN1">
+                                inverstissement
+                            </div>
+                            <br>
+                            <!-- presentation de conseil -->
+                            <div id="rep1">
+                                <input type="checkbox" name="reponse2" id="reponseN2">
+                                Presentation de conseil 
+                            </div>
+                        </div>
+                            <div class="selection">
+                                <label for="selction_jours">Reponses souhaitée sous :</label>
+                                <!-- select pemet de founir une liste qui permet a l'utilisateur de pourvoir faire un choix -->
+                                <select name="selectionJour" id="selection-jour">
+                                <option value="8 jour">8 jours</option>
+                                <option value="4 jour">4 jour</option>
+                                <option value="2 jour">2 jour</option>
+                                <option value="1 jour">1 jour</option>
+                                </select>
+                            </div>
+                    </div>
+               </div>
+        
+                    
+               
+            </div>
+            <div class="droit">
+                <div id="groupeDe2_2">
+                    <div class="intituler">
+                        <label for="intitulee">Intitulé</label>
+                        <input type="text" id="intitulee" col="40">
+                    </div>
+                    <div id="groupeDescription">
+                        <div class="description_projet">
+                            <label for="description">Description du projet:</label>
+
+                            <br>
+                            <!-- textarea permet de pouvoir faire une grosse de texte qui permet
+                            de pourvoi ecrire sur plusieurs ligne -->
+                            <textarea  id="description_projet"   cols="40" rows="20"></textarea>
+
+                        </div>
+                    </div>
+                </div>
+                    <div class="boutton">
+                        <!-- input type submit permet de soumettre un fourmulaire ou faire d'autre chose  -->
+                        <input type="submit" value="Envoyer">
+                        <input type="reset" value="reinitialiser">
+                    </div>
+                    
+            </div>
+                
+                 
+        </form>
+
+    </div>
+</body>
+</html>

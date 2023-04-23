@@ -1,0 +1,186 @@
+/* "width" permet de pouvoir etaler l élement choisit
+de gauche et de droite */
+/* "height"  permet de pouvoir etaler l élement choisit du haut et de bas  */
+
+/* "display: grid" permet de crée un espace qui ferras comme un tableu */
+/* "grid-template-columns" permet de pouvoir cree les colonnes dans l'element que le "display:grid" a été utiliser */
+/* "grid-template-row" permet de pouvoir cree les lignes dans l'element que le "display:grid" a été utiliser */
+/* "grid-column-start" permet de dire la colonne ou un élement commence dans un "display:grid" */
+
+/* "background:linear-gradient" permet de mettre de la couleur en drégrader dans l'arrière-plan d'un élément   */
+/* "background-color" permet de mettre de la couleur en arrière-plan d'un élement  */
+/* "font-family" permet de pouvoir changer la police du texte dans l'élemnt choisit  */
+
+/* "display:flex" ,"flex-wrap: nowrap","justify-content: center" c'est trois commande permet dans pouvoir centrer un élement au milieu d'une page */
+  
+/* "margin" la taille des marges sur les quatre côtés de l'élément. */
+/* "padding" permet de définir les différentes différences de remplissage sur les quatre côtés d'un élément    */
+
+/* border:solid permet de pouvoir definir une bordure autour d'un élément */
+
+*{
+    margin:2px;
+    padding:2px;
+}
+body{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 1000px;
+    background:linear-gradient(rgb(44, 9, 44),rgb(21, 5, 23),rgb(30, 89, 65))
+}
+
+.all{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color:rgb(4, 19, 19);
+    border-radius: 20px;
+    width: 1000px;
+    height: 600px;
+}
+form{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 51% 60%;
+    font-family: "Fira Sans", Arial, sans-serif;
+
+}
+
+
+   
+.identiter{
+    display: grid;
+    padding-bottom: 70%;
+
+
+}
+.droit,.option,.identiter,.selection{
+    margin: 3px;
+    padding: 5px;
+    border-radius: 20px;
+}
+.droit{
+    grid-column-start: 2;
+    border-radius: 20px;
+
+}
+.gauche{
+    grid-column-start: 1;
+    border-radius: 20px;
+}
+
+#nom, #prenom, #email,#intitulee,#description_projet{
+    border: solid rgb(253, 202, 202);
+    border-radius: 20px;
+}
+
+.option,.nature_demande{
+    border-radius: 20px;
+    padding-bottom: 20%;
+}
+
+.selection{
+    grid-row-start: 4;
+
+}
+.gauche{
+    display: grid;
+    grid-template-rows: 30% 20% 20% 20%;
+}
+
+.option,.identiter,.nature_demande{
+    grid-row-start: 2;
+}
+
+.identiter{
+    grid-row-start: 1;
+    background-color:rgb(66, 56, 73) ;
+}
+
+
+
+.nature_demande{
+    height: 80px;
+    grid-row-start: 3;
+    padding-bottom: 10%;
+}
+
+h4{
+    border-radius: 20px;
+    background:linear-gradient(rgb(220, 126, 131),rgb(108, 53, 53));
+    margin: 10px;
+}
+
+label{
+    border-radius: 50px;
+    background:linear-gradient(rgb(220, 126, 131),rgb(108, 53, 53));
+    
+}
+
+.option{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    width: 250px;
+    height: 20px;
+    
+}
+
+#groupeDe2,.option,#groupeNom,#groupePrenom,#groupeMail{
+    border-radius: 20px;
+    background:linear-gradient(rgb(100, 134, 134),rgb(59, 91, 99));
+}
+.groupeDe3{
+
+    border-radius: 20px;
+    height: 300px;
+    background-color:rgb(66, 56, 73) ;
+}
+
+.intituler,#groupeDescription{
+    background:linear-gradient(rgb(100, 134, 134),rgb(59, 91, 99)); 
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+
+#groupeNom,#groupePrenom,#groupeMail{
+    height: 35px;
+}
+#groupeDe2_2{
+    background-color:rgb(66, 56, 73) ;
+    border-radius: 20px;
+}
+.intituler{
+    height: 20px;
+    padding-bottom: 20px;
+}
+
+#titreEch{
+    width: 83px;
+    height: 20px;
+}
+
+#titreNature{
+    width: 180px;
+}
+
+#radio3,.selection{
+    background:linear-gradient(rgb(220, 126, 131),rgb(108, 53, 53));
+    border-radius: 10px;
+}
+#rep1{
+    background:linear-gradient(rgb(220, 126, 131),rgb(108, 53, 53));
+    padding:5px ;
+    margin: -3px;
+    border-radius: 10px;
+    width: 190px;
+    height: 20px;
+}
+
+
+
+
+
